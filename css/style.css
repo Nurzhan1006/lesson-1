@@ -2,6 +2,7 @@ body {
   width: 1512px;
   font-family: 'Poppins', sans-serif;
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -16,16 +17,20 @@ body {
   margin: 0;
   padding: 0;
   margin-left: 164px;
-}
-.navbar__menu {
+/* }
+.navbar__menu { */
   text-decoration: none;
   color: #313131;
   font-size: 20px;
   height: 30px;
 }
 .navbar__menu a {
+  transition: font-weight 0.2s;
   text-decoration: none;
   color: #313131;
+}
+.navbar__menu a:hover {
+  font-weight: 700;
 }
 .navbar__buttons {
   margin-left: 292px;
@@ -40,6 +45,7 @@ body {
   transition: 0.3s;
 }
 .btn-signin {
+  background: transparent;
   color: #333;
   border: 1px solid #333;
 }
@@ -47,22 +53,44 @@ body {
   background: #333;
   color: #fff;
 }
-btn-getstarted {
-  background: #007BFF;
-  color: #fff;
+.btn-getstarted {
+  background: #ACE238;
+  color: #1d1d1d;
 }
 
 .btn-getstarted:hover {
-  background: #0056b3;
+  background: #b5b5b5;
 }
-#navbar__bold {
-  color: #1d1d1d;
-  
+.section-about {
+  margin-left: 116px;
+  margin-top: 100px;
 }
-/* header {
-  width: 1272px;
-  height: 60px;
-  margin-top: 65px;
-  margin-left: 120px;
+.section-about__finban {
+  display: inline-flex;
+  justify-content: center;
+
 }
-*/
+p {margin: auto;
+  font-size: 20;}
+.section-about__finban__text {
+  display: flex;
+  justify-content: center;
+}
+.finban-1 {
+  width: 134;
+}
+.finban-2 {
+  width: 133;
+}
+.circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.green-color {
+  background: #ACE238;
+}
+.black-color {
+  background: #1d1d1d;
+}
